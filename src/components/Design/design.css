@@ -23,13 +23,33 @@
 }
 
 .design_item h3{
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 0.2rem;
 }
 
 .design_item-cta{
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.tec_name_container{
+    padding-bottom: 1.2rem;
+}
+
+.tec_name_header{
+    color: aquamarine;
+    font-style: italic;
+}
+
+.tec_name{
+    margin-right: 0.5rem;
+    background-color: green;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tec_name:first-child{
+    margin-left: 0rem !important;
 }
 
 /*media queries(Medium size)*/
