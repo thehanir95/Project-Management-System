@@ -29,7 +29,7 @@ const data = [
   {
     id:3,
     image: IMG4,
-    title: 'Architecture Design Project - Developing',
+    title: 'Architecture Design Project',
     usedTec: ['HTML ,', ' CSS'],
     github: 'https://github.com/thehanir95/Architecture-website',
     demo: ' https://architecture-site-5e2bb.web.app'
