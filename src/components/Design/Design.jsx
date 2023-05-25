@@ -6,7 +6,8 @@ import IMG2 from '../../assets/3.jpg'
 import IMG3 from '../../assets/4.jpg'
 import IMG4 from '../../assets/5.jpg'
 import IMG5 from '../../assets/6.jpg'
-import IMG6 from '../../assets/7.jpg'
+// import IMG6 from '../../assets/7.jpg'
+import IMG7 from '../../assets/8.jpg'
 
 const data = [
   {
@@ -49,13 +50,21 @@ const data = [
     github: 'https://github.com/thehanir95/Project_Collection_Admin_Panel',
     demo: 'https://project-collection-97c01.web.app'
   },
+  // {
+  //   id:6,
+  //   image: IMG6,
+  //   title: 'Resturant Management System - Developing',
+  //   usedTec: ['Vue'],
+  //   github: 'https://github.com/thehanir95/Resturant-Management-System',
+  //   demo: 'https://project-collection-97c01.web.app'
+  // },
   {
-    id:6,
-    image: IMG6,
-    title: 'Resturant Management System - Developing',
-    usedTec: ['Vue'],
-    github: 'https://github.com/thehanir95/Resturant-Management-System',
-    demo: 'https://project-collection-97c01.web.app'
+    id:7,
+    image: IMG7,
+    title: 'Meal Searching App',
+    usedTec: ['Vuex, ', 'Tailwind'],
+    github: 'https://github.com/thehanir95/Meal-Searching-App',
+    demo: 'https://mealsearchingweb.web.app/'
   }
 ]
 
@@ -83,7 +92,7 @@ const Design = () => {
                 </div>
                 <div className='design_item-cta'>
                 <a href={github} className='btn' target='_blank'>GitHub</a>
-                <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>  
+                <a href={demo} className={id === 4 ? 'btn-primary-hide' : 'btn btn-primary'} target='_blank'>Live Demo</a>  
                 </div>
               </article>
             )

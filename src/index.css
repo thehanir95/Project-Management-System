@@ -103,6 +103,9 @@ a:hover{
     background: var(--color-primary);
     color: var(--color-bg);
 }
+.btn-primary-hide{
+    display: none;
+}
 
 img{
     display: block;
