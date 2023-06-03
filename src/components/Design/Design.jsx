@@ -8,6 +8,9 @@ import IMG4 from '../../assets/5.jpg'
 import IMG5 from '../../assets/6.jpg'
 // import IMG6 from '../../assets/7.jpg'
 import IMG7 from '../../assets/8.jpg'
+import IMG8 from '../../assets/9.jpg'
+import "rc-tooltip/assets/bootstrap.css";
+import Tooltip from "rc-tooltip";
 
 const data = [
   {
@@ -65,6 +68,14 @@ const data = [
     usedTec: ['Vuex, ', 'Tailwind'],
     github: 'https://github.com/thehanir95/Meal-Searching-App',
     demo: 'https://mealsearchingweb.web.app/'
+  },
+  {
+    id:8,
+    image: IMG8,
+    title: 'Social Media App - Developing',
+    usedTec: ['React'],
+    github: 'https://github.com/thehanir95/Social-Media-App',
+    demo: 'https://socialmediaapp-1cf86.web.app/'
   }
 ]
 
@@ -83,7 +94,14 @@ const Design = () => {
                 <div className='design_item-image'>
                   <img src={image} alt="IMG1" />
                 </div>
+                <h3 className={title.length >= 19 ? 'hideTitle' : 'showTitle'}>{title}</h3>
+                <Tooltip
+                className={title.length >= 19 ? 'enableTooltip' : 'disableTooltip'}
+                placement="left"
+                overlay={<span>{title}</span>}
+                >
                 <h3>{title}</h3>
+                </Tooltip> 
                 <div className='tec_name_container'>
                   <h4 className='tec_name_header'>Technologies:</h4>
                   {/* <span className='tec_name'>{usedTec[0]}</span>
@@ -98,7 +116,6 @@ const Design = () => {
             )
           })
         }
-             
       </div>
     </section>
   ) 
