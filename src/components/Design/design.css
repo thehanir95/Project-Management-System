@@ -32,7 +32,8 @@
 
 .design_item-cta{
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
+    justify-content: center;
     margin-bottom: 1rem;
 }
 
@@ -57,10 +58,16 @@
 }
 
 .disableTooltip,
-.hideTitle{
+.hideTitle,
+.demo-tag-hide{
     display: none;
 }
 
+.demo-tag-display{
+    background-color: red;
+    padding: 10px;
+    border-radius: 3px;
+}
 /*media queries(Medium size)*/
 @media screen and (max-width: 1024px) {
    .design_container{

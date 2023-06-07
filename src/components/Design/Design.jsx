@@ -109,8 +109,8 @@ const Design = () => {
                   <span className='tec_name'>{usedTec}</span>
                 </div>
                 <div className='design_item-cta'>
-                <a href={github} className='btn' target='_blank'>GitHub</a>
-                <a href={demo} className={id === 4 ? 'btn-primary-hide' : 'btn btn-primary'} target='_blank'>Live Demo</a>  
+                {/* <a href={github} className='btn' target='_blank'>GitHub</a> */}
+                <a href={demo} className='btn btn-primary' target='_blank'>{id === 4 ? 'This is Demo' : 'Live Demo'}</a>
                 </div>
               </article>
             )
